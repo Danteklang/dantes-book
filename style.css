@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url('./assets/pexels-scott-webb-1029624.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    max-width: 80rem;
+    width: 100%;
+    margin: auto;
+}
+
+aside {
+    width: 16rem;
+    padding-right: 2rem;
+}
+
+article {
+    max-width: 30rem;
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 35px;
+    margin: 15px;
+}
+
+footer {
+    text-align: center ;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(148, 36, 253, 0.719);
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
+li {
+    padding: 8px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    
+}
+
+aside a {
+    display: inline-block;
+    position: relative;
+}
+
+aside a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: chartreuse;
+    transition: 0.4s;
+}
+
+aside a:hover::after {
+    width: 100%;
+}
+
+aside a:hover {
+    font-weight: bold;
+    animation-name: linkHover;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+article a {
+    padding: 6px 7px;
+    background-color: purple;
+    border: solid black 4px;
+    color: yellow;
+    border-radius: 7px;
+
+}
+
+article a:hover {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@keyframes linkHover {
+    0% {font-size: 1rem;}
+    50% {font-size: 1.1rem;}
+    100% {font-size: 1rem;}
+}
